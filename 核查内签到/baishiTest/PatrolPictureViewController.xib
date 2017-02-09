@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatrolPictureViewController">
+            <connections>
+                <outlet property="HDBtn" destination="Qlb-XY-e2X" id="8wj-kX-LT2"/>
+                <outlet property="JPBtn" destination="jDj-fM-6ba" id="16J-O6-9XH"/>
+                <outlet property="PMBtn" destination="LBe-2Q-l3E" id="jiR-vf-tuA"/>
+                <outlet property="XXBtn" destination="630-nx-Rb3" id="7PU-5q-sgs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="630-nx-Rb3">
+                    <rect key="frame" x="84" y="71" width="72" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.78490858049142742" blue="0.83726450635723049" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="形象照">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="形象照">
+                        <color key="titleColor" red="1" green="0.03730573559" blue="0.14968758139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="XXPhoto:" destination="-1" eventType="touchUpInside" id="ZWn-MN-9Nk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlb-XY-e2X">
+                    <rect key="frame" x="164" y="71" width="72" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.78490858049142742" blue="0.83726450635723049" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="互动照">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="互动照">
+                        <color key="titleColor" red="1" green="0.03730573559" blue="0.14968758139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="HDPhoto:" destination="-1" eventType="touchUpInside" id="u9F-3t-38l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDj-fM-6ba">
+                    <rect key="frame" x="244" y="71" width="72" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.78490858049142742" blue="0.83726450635723049" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="竞品照">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="竞品照">
+                        <color key="titleColor" red="1" green="0.03730573559" blue="0.14968758139999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="JPPhoto:" destination="-1" eventType="touchUpInside" id="K7v-dk-TMR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBe-2Q-l3E">
+                    <rect key="frame" x="4" y="71" width="72" height="42"/>
+                    <color key="backgroundColor" red="1" green="0.78490858049142742" blue="0.83726450635723049" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="排面照">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="排面照">
+                        <color key="titleColor" red="1" green="0.03730573559200423" blue="0.14968758141490512" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="PMPhoto:" destination="-1" eventType="touchUpInside" id="w1a-bx-WKK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Qlb-XY-e2X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="1dO-Z8-UFC"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="width" secondItem="630-nx-Rb3" secondAttribute="width" id="2MZ-iE-MuW"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="height" secondItem="jDj-fM-6ba" secondAttribute="height" id="2gS-Ig-xT4"/>
+                <constraint firstItem="630-nx-Rb3" firstAttribute="leading" secondItem="LBe-2Q-l3E" secondAttribute="trailing" constant="8" id="2qX-sQ-Esa"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="height" secondItem="Qlb-XY-e2X" secondAttribute="height" id="3n0-i6-MC5"/>
+                <constraint firstItem="jDj-fM-6ba" firstAttribute="leading" secondItem="Qlb-XY-e2X" secondAttribute="trailing" constant="8" id="4RL-ce-VEA"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="width" secondItem="jDj-fM-6ba" secondAttribute="width" id="AUu-W7-2yh"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="Eyj-ah-q3n"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="height" secondItem="630-nx-Rb3" secondAttribute="height" id="FVE-gv-Wx7"/>
+                <constraint firstItem="630-nx-Rb3" firstAttribute="leading" secondItem="LBe-2Q-l3E" secondAttribute="trailing" constant="8" id="IFU-pH-3H9"/>
+                <constraint firstAttribute="trailing" secondItem="jDj-fM-6ba" secondAttribute="trailing" constant="4" id="IwF-zQ-dEG"/>
+                <constraint firstItem="630-nx-Rb3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="LaT-or-faG"/>
+                <constraint firstItem="Qlb-XY-e2X" firstAttribute="leading" secondItem="630-nx-Rb3" secondAttribute="trailing" constant="8" id="hR5-ZD-w0X"/>
+                <constraint firstItem="jDj-fM-6ba" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="iaK-Dn-LaS"/>
+                <constraint firstItem="jDj-fM-6ba" firstAttribute="leading" secondItem="Qlb-XY-e2X" secondAttribute="trailing" constant="8" id="oyL-um-ynG"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="width" secondItem="Qlb-XY-e2X" secondAttribute="width" id="rMz-N5-kNi"/>
+                <constraint firstItem="Qlb-XY-e2X" firstAttribute="leading" secondItem="630-nx-Rb3" secondAttribute="trailing" constant="8" id="uIs-hD-kOi"/>
+                <constraint firstItem="LBe-2Q-l3E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="w9E-qN-RdU"/>
+            </constraints>
+            <point key="canvasLocation" x="572" y="343"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
